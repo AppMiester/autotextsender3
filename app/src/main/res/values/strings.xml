@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">autotextsender</string>
+    <string name="auto_text">Auto Text</string>
+    <string name="home_sub">Never Forget An Important Event</string>
+    <string name="createcontact_sub">Create Contact</string>
+
+
+    <string name="enter_contact_info">Enter Contact Info</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_phone_number">Phone# eg. 508 123 0001</string>
+
+
+    <string name="submit">Submit Entry</string>
+
+
+    <string name="contact_list">Contact List</string>
+    <string name="no_contacts">No Contacts Entered</string>
+
+    <string name ="createmsg">Create Message For</string>
+    <string name ="view_edt_msg">View/Edit Messages For</string>
+
+
+
+</resources>
