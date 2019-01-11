@@ -1,5 +1,6 @@
 package com.autotextappsender.autotextsender;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ContactListAT extends AppCompatActivity {
+public class ContactListAT extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     public static String nameHolder;
     public static String phoneNumberHolder;
@@ -50,12 +51,36 @@ public class ContactListAT extends AppCompatActivity {
 
 
 
+
+
        populateArrays();
        ListView listView =(ListView)findViewById(R.id.listview);
        CustomAdapter customAdapter = new CustomAdapter();
        listView.setAdapter(customAdapter);
 
 
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+
+            case R.id.textView2_create_msg:
+                System.out.println("onran2");
+                Intent intent = new Intent(this, CreateMessage.class);
+                startActivity(intent);
+                break;
+
+
+            default:
+                System.out.println("onran3");
+                return false;
+        }
+
+
+        return false;
     }
 
 
@@ -106,15 +131,20 @@ public class ContactListAT extends AppCompatActivity {
 
         PopupMenu popup = new PopupMenu(this,v);
         MenuInflater menuInflater = popup.getMenuInflater();
-        menuInflater.inflate(R.menu.contactpopup,popup.getMenu());
+
+
+
 
         //sets popup menu list items
         popup.inflate(R.menu.contactpopup);
         Menu menu = popup.getMenu();
         onPrepareOptionsMenu(menu);
+        popup.setOnMenuItemClickListener(ContactListAT.this);
+
 
 
         popup.show();
+
 
     }
 
@@ -138,6 +168,7 @@ public class ContactListAT extends AppCompatActivity {
         MenuItem item1 = menu.findItem(R.id.textView2_view_edit_msg);
         menu.getItem(0).setTitle(createmsgStringResource);
         menu.getItem(1).setTitle(viewEditmessageStringResource);
+
        // item0.setTitle(createmsgStringResource);
         //item1.setTitle(viewEditmessageStringResource);
 
@@ -146,7 +177,68 @@ public class ContactListAT extends AppCompatActivity {
     }
 
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        System.out.println("onran");
+
+        switch (item.getItemId()) {
+
+
+            case R.id.textView2_create_msg:
+                System.out.println("onran2");
+                Intent intent = new Intent(this, CreateMessage.class);
+                startActivity(intent);
+                break;
+
+
+            default:
+                System.out.println("onran3");
+                return super.onOptionsItemSelected(item);
+        }
+
+        return true;
+
+    }
+
+
+   /* public boolean onMenuItemClick(MenuItem item) {
+        System.out.println("onran");
+
+        switch (item.getItemId()) {
+
+
+            case R.id.textView2_create_msg:
+                System.out.println("onran2");
+                Intent intent = new Intent(this, CreateMessage.class);
+                startActivity(intent);
+                break;
+
+
+            default:
+                System.out.println("onran3");
+                return false;
+        }
+        return true;
+
+    }*/
 
 
 
-}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

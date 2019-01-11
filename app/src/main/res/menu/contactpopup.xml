@@ -5,10 +5,12 @@
 
      <item android:id="@id/textView2_create_msg"
          android:title="@string/createmsg"
+
          />
 
-    <item android:id="@id/textView2_create_msg"
+    <item android:id="@id/textView2_view_edit_msg"
         android:title=""
+
         />
 
     <TextView

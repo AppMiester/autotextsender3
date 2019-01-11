@@ -17,9 +17,8 @@
     <string name="contact_list">Contact List</string>
     <string name="no_contacts">No Contacts Entered</string>
 
-    <string name ="createmsg">Create Message For</string>
-    <string name ="view_edt_msg">View/Edit Messages For</string>
-
+    <string name="createmsg">Create Message For</string>
+    <string name="view_edt_msg">View/Edit Messages For</string>
 
 
 </resources>
