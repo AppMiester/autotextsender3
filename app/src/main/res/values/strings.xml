@@ -19,6 +19,6 @@
 
     <string name="createmsg">Create Message For</string>
     <string name="view_edt_msg">View/Edit Messages For</string>
-
+    <string name="enter_message_for">Enter Message For</string>
 
 </resources>

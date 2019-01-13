@@ -130,9 +130,6 @@ public class ContactListAT extends AppCompatActivity implements PopupMenu.OnMenu
 
 
         PopupMenu popup = new PopupMenu(this,v);
-        MenuInflater menuInflater = popup.getMenuInflater();
-
-
 
 
         //sets popup menu list items
@@ -201,26 +198,6 @@ public class ContactListAT extends AppCompatActivity implements PopupMenu.OnMenu
     }
 
 
-   /* public boolean onMenuItemClick(MenuItem item) {
-        System.out.println("onran");
-
-        switch (item.getItemId()) {
-
-
-            case R.id.textView2_create_msg:
-                System.out.println("onran2");
-                Intent intent = new Intent(this, CreateMessage.class);
-                startActivity(intent);
-                break;
-
-
-            default:
-                System.out.println("onran3");
-                return false;
-        }
-        return true;
-
-    }*/
 
 
 
