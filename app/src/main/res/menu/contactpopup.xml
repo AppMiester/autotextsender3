@@ -3,26 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-     <item android:id="@id/textView2_create_msg"
+     <item android:id="@+id/textView2_create_msg"
          android:title="@string/createmsg"
 
          />
 
-    <item android:id="@id/textView2_view_edit_msg"
-        android:title=""
+    <item android:id="@+id/textView2_view_edit_msg"
+        android:title="@string/view_edt_msg"
 
         />
 
-    <TextView
-        android:id="@+id/textView2_create_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         />
 
-    <TextView
-        android:id="@+id/textView2_view_edit_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
 </menu>
 

@@ -2,7 +2,7 @@ package com.autotextappsender.autotextsender;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+
 import android.view.WindowManager;
 import android.widget.EditText;
 
@@ -22,7 +22,7 @@ public class CreateMessage extends AppCompatActivity {
 
         EditText enterMessage=(EditText) findViewById(R.id.editText2_enter_message);
 
-        String enterMessageStringResource =getString(R.string.enter_message_for)+ " "+ ContactListAT.nameHolder;
+        String enterMessageStringResource =getString(R.string.enter_message_for,ContactListAT.nameHolder);
 
         enterMessage.setHint(enterMessageStringResource);
 

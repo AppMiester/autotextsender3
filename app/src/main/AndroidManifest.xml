@@ -17,7 +17,9 @@
         </activity>
         <activity android:name=".CreateContact" />
         <activity android:name=".ContactListAT" />
-        <activity android:name=".CreateMessage"/>
+        <activity android:name=".CreateMessage" />
+
+        
     </application>
 
 </manifest>

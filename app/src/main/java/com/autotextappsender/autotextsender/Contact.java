@@ -16,20 +16,18 @@ public class Contact {
 
         public String phoneNumber;
         public ArrayList<Message> messageArrayList= new ArrayList<Message>();
-        public static ArrayList<Contact> contactArraylist= new <Contact> ArrayList();
+
 
         public Contact(String name,String phonenumber){
             this.name=name;
             phoneNumber = phonenumber;
 
-            contactArraylist.add(this);
-            sortContactArray();
+
+
         }
 
 
-        public static void sortContactArray(){
-            Collections.sort(Contact.contactArraylist,new SortContactArray());
-        }
+
 
 
 
