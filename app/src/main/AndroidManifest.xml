@@ -19,7 +19,7 @@
         <activity android:name=".ContactListAT" />
         <activity android:name=".CreateMessage" />
 
-        
+
     </application>
 
 </manifest>
